@@ -15,11 +15,11 @@
             </div> --}}
 
             <div class="post-card col">
-                <a style="text-decoration: none; color:black" href="/blog/{{ $post['slug'] }}">
+                <a style="text-decoration: none; color:black" href="/blog/{{ $post->slug }}">
                     <img class="avatar" src="/asset/rpl3.png">
-                    <p class="title">{{ $post['title'] }}</p>
+                    <p class="title">{{ $post->title }}</p>
                     <span class="datetime">3 min to read</span>
-                    <img class="image-preview" src="/asset/{{ $post['img'] }}">
+                    <img class="image-preview" src="/asset/{{ $post->img }}">
                 </a>
             </div>
         @endforeach
