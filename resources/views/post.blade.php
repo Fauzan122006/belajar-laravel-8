@@ -20,7 +20,11 @@
                 <div class="card-text">
                     {!! $post->body !!}
                 </div>
-                <p class="card-text"><small>Author: {{ $post->author }}</small></p>
+                <div style="display: flex; gap:20px">
+                    <p class="card-text"><small>Author: {{ $post->author }}</small></p>
+                    <p class="card-text"><small>Category: <a
+                                href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a></small></p>
+                </div>
             </div>
         </div>
     </div>
