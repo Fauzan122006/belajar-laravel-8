@@ -21,8 +21,9 @@
                     {!! $post->body !!}
                 </div>
                 <div style="display: flex; gap:20px">
-                    <p class="card-text"><small>Author: {{ $post->author }}</small></p>
-                    <p class="card-text"><small>Category: <a
+                    <p class="card-text"><small>Author: <a class="text-decoration-none"
+                                href="/users/{{ $post->user->name }}">{{ $post->user->name }}</a></small></p>
+                    <p class="card-text"><small>Category: <a class="text-decoration-none"
                                 href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a></small></p>
                 </div>
             </div>

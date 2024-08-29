@@ -8,7 +8,7 @@
                 <a style="text-decoration: none; color:black" href="/blog/{{ $post->slug }}">
                     <img class="avatar" src="/asset/rpl3.png">
                     <p class="title">{{ $post->title }}</p>
-                    <span class="datetime">3 min to read</span>
+                    <span class="datetime mb-3">By. {{ $post->user->name }} | Category: {{ $post->category->name }}</span>
                     <img class="image-preview" src="/asset/{{ $post->img }}">
                 </a>
             </div>
